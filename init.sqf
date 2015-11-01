@@ -7,9 +7,7 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNUmbers "gameplay_constants.sqf";
 [] call compileFinal preprocessFileLineNUmbers "classnames.sqf";
 
-[] execVM "scripts\pdg\earplug\earplugInit.sqf";
-
-[] execVM "pdg\zlt_fieldrepair.sqf";
+[] execVM "PDG\zlt_fieldrepair.sqf";
 
 if ( GRLIB_revive > 0 ) then {
 	[] execVM "FAR_revive\FAR_revive_init.sqf";
