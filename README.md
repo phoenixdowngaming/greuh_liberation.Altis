@@ -4,7 +4,7 @@
 
 ## Current version : 0.914PDG
 
-### Modified for Phoenix Down Gaming [PDG] by Jigsaw
+This is a permanent fork of the Altis Liberation mission built by the guys at [GRUEH]. This fork is modified and maintianed for Phoenix Down Gaming [PDG].
 
 ## Overview
 
