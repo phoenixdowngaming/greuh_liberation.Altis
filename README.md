@@ -4,7 +4,7 @@
 
 ## Current version : 0.914PDG
 
-This is a permanent fork of the Altis Liberation mission built by the guys at [GRUEH]. This fork is modified and maintianed for Phoenix Down Gaming [PDG].
+This is a permanent fork of the Altis Liberation mission built by the guys at [GREUH]. This fork is modified and maintianed for Phoenix Down Gaming [PDG]. The original version can be found at http://github.com/GreuhZbug/greuh_liberation.Altis 
 
 ## Overview
 
