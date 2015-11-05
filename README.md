@@ -2,7 +2,9 @@
 
 # Liberation for Arma 3
 
-## Current version : 0.914
+## Current version : 0.914PDG
+
+### Modified for Phoenix Down Gaming [PDG] by Jigsaw
 
 ## Overview
 
