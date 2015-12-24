@@ -34,6 +34,7 @@ while { true } do {
 			_units_to_remove pushback _x;
 		};
 	} foreach (curatorEditableObjects (allCurators select 0));
+//PDG Edit	
 /*
 	{
 		_zgm = _x;
