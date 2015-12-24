@@ -19,15 +19,19 @@ while { true } do {
 	_olddistance_obj = round desiredviewdistance_obj;
 	_olddesiredvolume = desired_vehvolume;
 	_was_vehicle = ( vehicle player != player );
-
-	if ( _was_vehicle ) then {
-		setViewDistance (round desiredviewdistance_veh);
-		1 fadeSound ( desired_vehvolume / 100.0 );
-	} else {
-		setViewDistance (round desiredviewdistance_inf);
-		1 fadeSound 1;
-	};
-
-	setObjectViewDistance ((desiredviewdistance_obj / 100.0) * desiredviewdistance_inf);
+	_xian_player = ( vehicle player = player );
+    if ( _was_vehicle ) then {
+        setViewDistance (round desiredviewdistance_veh);
+        1 fadeSound ( desired_vehvolume / 100.0 );
+    } else {
+        setViewDistance (round desiredviewdistance_inf);
+        1 fadeSound 1;
+    };
+    if (_xian_player) then {
+        1 fadeSound (desired_vehvolume / 100.0);
+    } else {
+        1 fadeSound 1;
+    };
+    setObjectViewDistance ((desiredviewdistance_obj / 100.0) * desiredviewdistance_inf);
 
 };
