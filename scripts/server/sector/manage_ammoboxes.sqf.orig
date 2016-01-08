@@ -1,8 +1,15 @@
 params [ "_sector" ];
+<<<<<<< HEAD
+private [ "_crates_amount", "_spawnpos", "_i", "_spawnclass", "_nearbuildings", "_intel_range", "_building_positions", "_used_positions", "_buildingposition" ];
+
+_intel_range = 100;
+_nbintel = (floor (random 4));
+=======
 private [ "_crates_amount", "_spawnpos", "_i", "_spawnclass", "_nearbuildings", "_intel_range", "_building_positions", "_used_positions", "_buildingposition", "_nbintel", "_compatible_classnames" ];
 
 _intel_range = 150;
 _nbintel = 2 + (floor (random 3));
+>>>>>>> 35cfb6944470fd69245cbf39dcc0b875407e606e
 _compatible_classnames = [
 "Land_Cargo_House_V1_F",
 "Land_Cargo_House_V2_F",
@@ -40,7 +47,7 @@ if ( !( _sector in GRLIB_military_sectors_already_activated )) then {
 
 		_spawnpos = zeropos;
 		while { _spawnpos distance zeropos < 1000 } do {
-			_spawnpos =  ( [ ( markerpos _sector), random 50, random 360 ] call BIS_fnc_relPos ) findEmptyPosition [10, 100, 'B_Heli_Transport_01_F'];
+			_spawnpos =  ( [ ( markerpos _sector), random 50, random 360 ] call BIS_fnc_relPos ) findEmptyPosition [0, 100, 'B_Heli_Transport_01_F'];
 			if ( count _spawnpos == 0 ) then { _spawnpos = zeropos; };
 		};
 
@@ -66,7 +73,11 @@ if ( !( _sector in GRLIB_military_sectors_already_activated )) then {
 
 		_building_positions = [ _building_positions, { _x select 2 < 2 } ] call BIS_fnc_conditionalSelect;
 
+<<<<<<< HEAD
+		if ( count _building_positions >= _nbintel ) then {
+=======
 		if ( count _building_positions >= (_nbintel * 4) ) then {
+>>>>>>> 35cfb6944470fd69245cbf39dcc0b875407e606e
 
 			_used_positions = [];
 
@@ -108,7 +119,10 @@ if ( !( _sector in GRLIB_military_sectors_already_activated )) then {
 				_intelobject allowDamage false;
 				_intelobject setVectorUp [0,0,1];
 				_intelobject setdir _inteldir;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 35cfb6944470fd69245cbf39dcc0b875407e606e
 				if ( _intelclassname == GRLIB_intel_file ) then {
 					_intelobject attachTo [ _tableobject, [0, 0, 0.42] ];
 				};
@@ -117,12 +131,15 @@ if ( !( _sector in GRLIB_military_sectors_already_activated )) then {
 					_intelobject attachTo [ _tableobject, [0, 0, 0.56] ];
 				};
 
+<<<<<<< HEAD
+=======
 
 				sleep 0.1;
 
 				_chairobject setPosATL (getPosATL _chairobject);
 				_intelobject setPosATL (getPosATL _intelobject);
 
+>>>>>>> 35cfb6944470fd69245cbf39dcc0b875407e606e
 				_nbintel = _nbintel - 1;
 			};
 		};

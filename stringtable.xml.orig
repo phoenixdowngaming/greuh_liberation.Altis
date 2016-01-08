@@ -2,10 +2,17 @@
         <Project name="Liberation">
                 <Package name="Liberation">
         	<Key ID="STR_MISSION_TITLE">
-        		<Original>Liberation 0.919PDG</Original>
+<<<<<<< HEAD
+        		<Original>Liberation 0.918PDG</Original>
         	</Key>
                 <Key ID="STR_MISSION_VERSION">
-                        <Original>v0.919PDG</Original>
+                        <Original>v0.918PDG</Original>
+=======
+        		<Original>Liberation 0.919</Original>
+        	</Key>
+                <Key ID="STR_MISSION_VERSION">
+                        <Original>v0.919</Original>
+>>>>>>> 87ea43e919cb5cc8b65d2e0cd530deaadbda895c
                 </Key>
                 <Key ID="STR_MISSION_DESCRIPTION">
                         <Original>With the power of Freedom and Democracy you shall liberate Altis from the CSAT oppression.</Original>
@@ -1355,6 +1362,22 @@
                 <Key ID="STR_SHORTER_NIGHTS_PARAM">
                         <Original>Shorter nights</Original>
                         <French>Nuits plus courtes</French>
+                </Key>
+                <Key ID="STR_REPAIRING">
+                        <Original>Repairing</Original>
+                        <French>Réparation</French>
+                </Key>
+                <Key ID="STR_REARMING">
+                        <Original>Rearming in %1s</Original>
+                        <French>Réarmement dans %1s</French>
+                </Key>
+                <Key ID="STR_REFUELING">
+                        <Original>Refueling</Original>
+                        <French>Ravitaillement</French>
+                </Key>
+                <Key ID="STR_INTEL">
+                        <Original>-- TAKE INTEL</Original>
+                        <French>-- PRENDRE INTEL</French>
                 </Key>
                 <Key ID="STR_REPAIRING">
                         <Original>Repairing</Original>
