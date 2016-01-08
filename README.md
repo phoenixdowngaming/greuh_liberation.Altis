@@ -2,7 +2,7 @@
 
 # Liberation for Arma 3
 
-## Current version : 0.918PDG
+## Current version : 0.919PDG
 
 This permanent fork is modified and maintained for Phoenix Down Gaming [PDG].
 The original version can be found at http://github.com/GreuhZbug/greuh_liberation.Altis.
@@ -21,9 +21,7 @@ Altis has fallen to the CSAT forces, and it is up to you to take it back. Embark
 
 ## Media
 
-[Gameplay footage](https://www.youtube.com/watch?v=1nigtUpZqcA)
-
-[Quick start tutorial](https://www.youtube.com/watch?v=jC9sk7AzHAY)
+### [Gameplay footage](https://www.youtube.com/watch?v=Dji0I1K6CdQ&list=PLhipAgEJU9WQqV3tZ_jm6T91YciQtD-fv&index=1) - [Quick start tutorial](https://www.youtube.com/watch?v=jC9sk7AzHAY)
 
 ## Follow the development
 

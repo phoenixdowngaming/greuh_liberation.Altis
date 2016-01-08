@@ -41,7 +41,10 @@ F_cleanOpforVehicle = compileFinal preprocessFileLineNumbers "scripts\shared\fun
 F_getLoadout = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getLoadout.sqf";
 F_setLoadout = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_setLoadout.sqf";
 F_rearmVehicle = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_rearmVehicle.sqf";
+<<<<<<< HEAD
+F_setFuel = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_setFuel.sqf";
+=======
 F_setFuel = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_setFuel.sqf";
 F_forceBluforCrew = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_forceBluforCrew.sqf";
 F_getCorrectedSectorRange = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getCorrectedSectorRange.sqf";
-F_getLocationName = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getLocationName.sqf";
+>>>>>>> 35cfb6944470fd69245cbf39dcc0b875407e606e
