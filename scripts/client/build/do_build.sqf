@@ -56,6 +56,8 @@ while { true } do {
 				_idx = _idx + 1;
 
 			} foreach _classname;
+			_grp setCombatMode "GREEN";
+			_grp setBehaviour "AWARE";
 			build_confirmed = 0;
 		} else {
 			_posfob = getpos player;
@@ -138,14 +140,14 @@ while { true } do {
 
 				private _remove_objects = [];
 				{
-					if ( _x isKindOf "Animal" || typeof _x in GRLIB_ignore_colisions_when_building || _x == player || _x == _vehicle ) then {
+					if ((_x isKindOf "Animal") || ((typeof _x) in GRLIB_ignore_colisions_when_building) || (_x == player) || (_x == _vehicle )) then {
 						_remove_objects pushback _x;
 					};
 				} foreach _near_objects;
 
 				private _remove_objects_25 = [];
 				{
-					if ( _x isKindOf "Animal" || typeof _x in GRLIB_ignore_colisions_when_building || _x == player || _x == _vehicle ) then {
+					if ((_x isKindOf "Animal") || ((typeof _x) in GRLIB_ignore_colisions_when_building) || (_x == player) || (_x == _vehicle ))  then {
 						_remove_objects_25 pushback _x;
 					};
 				} foreach _near_objects_25;
@@ -252,6 +254,10 @@ while { true } do {
 				sleep 0.3;
 				_vehicle allowDamage true;
 				_vehicle setDamage 0;
+
+				if(buildtype == 99) then {
+					_vehicle addEventHandler ["HandleDamage", { 0 }];
+				};
 
 				if(buildtype != 6) then {
 					_vehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];

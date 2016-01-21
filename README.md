@@ -2,7 +2,7 @@
 
 # Liberation for Arma 3
 
-## Current version : 0.919PDG
+## Current version : 0.921PDG
 
 This permanent fork is modified and maintained for Phoenix Down Gaming [PDG].
 The original version can be found at http://github.com/GreuhZbug/greuh_liberation.Altis.
