@@ -6,7 +6,7 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\fetch_params.sqf";
 [] call compileFinal preprocessFileLineNUmbers "gameplay_constants.sqf";
 [] call compileFinal preprocessFileLineNUmbers "classnames_extension.sqf";
-[] call compileFinal preprocessFileLineNUmbers "classnames.sqf";
+[] call compileFinal preprocessFileLineNUmbers "scripts\shared\classnames.sqf";
 
 [] execVM "PDG\zlt_fieldrepair.sqf";
 
