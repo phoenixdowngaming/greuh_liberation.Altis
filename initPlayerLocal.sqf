@@ -6,6 +6,5 @@ player addMPEventhandler ["MPRespawn", {player enableFatigue false}];
 enableSentences false;
 
 // add in custom mods
+_null = [] execVM "PDG\earplug\earplugInit.sqf";
 _null =	[] execVM 'PDG\QS_TurretSafetySystem.sqf';							//Turret Safety System
-_null = [] execVM "scripts\Jump.sqf";										//Jump while running
-#include "scripts\SHK_Fastrope.sqf"											//Fastrope option

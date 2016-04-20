@@ -8,10 +8,7 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNUmbers "classnames_extension.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\classnames.sqf";
 
-[] execVM "VCOM_Driving\init.sqf";
-[] execVM "scripts\sa_ropes.sqf";
-[] execVM "PDG\fn_advancedTowingInit.sqf"
-[] execVM "scripts\passToHCs.sqf";
+[] execVM "PDG\zlt_fieldrepair.sqf";
 
 if ( GRLIB_revive > 0 ) then {
 	[] execVM "FAR_revive\FAR_revive_init.sqf";
